@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>上海深秋新玩法 · 11/15–30</title>
+<meta name="description" content="去过外滩和东方明珠之后的上海：11 月新展、梧桐区小马路、苏州河、虹口老街、赏秋时间表和本帮菜，配小红书推荐。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Noto+Serif+SC:wght@700;900&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap">
+<style>*,*::before,*::after{box-sizing:border-box}body{margin:0}img{max-width:100%}[hidden]{display:none!important}:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+
+/* Layout: Philly-trip template (dark slate, gold accent, serif display) — sticky nav with route switch, full-bleed hero, card grids, center-line timeline, 2x2 tips. Deliberately single dark theme like the template. */
+:root{
+  color-scheme:dark;
+  --bg:#020617; --panel:#0B1222; --panel-2:#0F172A; --line:#1E293B; --line-2:#334155;
+  --fg:#F1F5F9; --dim:#94A3B8; --faint:#64748B;
+  --gold:#FBBF24; --gold-soft:rgba(251,191,36,.1); --gold-line:rgba(251,191,36,.25);
+  --dot:#4ADE80; --warn:#FCA5A5;
+  --f-display:"Playfair Display","Noto Serif SC","Songti SC",Georgia,serif;
+  --f-body:Inter,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif;
+  --f-mono:"JetBrains Mono",ui-monospace,Menlo,monospace;
+}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--fg);font-family:var(--f-body);font-size:15px;line-height:1.7}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:60;background:rgba(2,6,23,.92)}
+a{color:inherit}
+a:focus-visible,button:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.gut{padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.inner{max-width:1120px;margin:0 auto}
+
+/* nav */
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:rgba(2,6,23,.82);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid rgba(30,41,59,.6)}
+nav .inner{display:flex;align-items:center;gap:16px;padding-block:12px;flex-wrap:wrap}
+.logo{font-family:var(--f-display);font-weight:700;font-size:18px;white-space:nowrap}
+.logo b{color:var(--gold)}
+.switch{display:flex;background:var(--panel-2);border:1px solid var(--line-2);border-radius:999px;padding:3px;margin-left:auto}
+.switch button{font:inherit;font-size:13px;font-weight:600;color:var(--dim);background:none;border:0;border-radius:999px;padding:5px 14px;cursor:pointer;white-space:nowrap}
+.switch button[aria-pressed="true"]{background:var(--gold);color:#1a1300}
+.links{display:flex;gap:18px;font-size:13px;color:var(--dim)}
+.links a{text-decoration:none}
+.links a:hover{color:var(--fg)}
+@media (max-width:720px){.links{order:3;width:100%;justify-content:space-between}.switch{margin-left:auto}}
+
+/* hero */
+.hero{position:relative;overflow:hidden;min-height:620px;display:flex;align-items:flex-end}
+.hero .sky{position:absolute;inset:0}
+.hero .shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(2,6,23,.15) 0%,rgba(2,6,23,.55) 55%,var(--bg) 100%)}
+.hero svg.land{position:absolute;left:0;right:0;bottom:0;width:100%;height:58%}
+.hero .inner{position:relative;width:100%;padding-block:120px 64px;display:flex;flex-direction:column;gap:22px}
+.eyebrow{display:flex;align-items:center;gap:12px;color:var(--gold);font-size:13px;font-weight:500;letter-spacing:.18em}
+.eyebrow::before{content:"";width:44px;height:1px;background:var(--gold)}
+h1{font-family:var(--f-display);font-weight:900;font-size:clamp(48px,9vw,96px);line-height:1.08;margin:0;text-wrap:balance}
+h1 .w{color:#fff;display:block} h1 .g{color:var(--gold);display:block}
+.intro{max-width:34em;color:#CBD5E1;font-size:17px;margin:0}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 22px;border-radius:999px;font-size:14px;font-weight:600;text-decoration:none;border:1px solid var(--line-2)}
+.btn.primary{background:var(--gold);color:#1a1300;border-color:var(--gold)}
+.btn:hover{filter:brightness(1.08)}
+.stats{display:flex;flex-wrap:wrap;gap:20px 44px;margin-top:10px}
+.stat{display:flex;flex-direction:column}
+.stat .v{font-family:var(--f-display);font-weight:700;font-size:34px;color:var(--gold);line-height:1.15;font-variant-numeric:tabular-nums}
+.stat .l{font-size:11px;letter-spacing:.12em;color:var(--faint)}
+
+/* sections */
+section.block{padding-block:72px 24px}
+.shead{display:flex;flex-direction:column;align-items:center;text-align:center;gap:10px;margin-bottom:44px}
+.shead .k{color:var(--gold);font-size:12px;letter-spacing:.24em;font-weight:500}
+h2{font-family:var(--f-display);font-weight:900;font-size:clamp(32px,5vw,48px);margin:0;line-height:1.2;text-wrap:balance}
+.shead p{color:var(--dim);margin:0;max-width:36em}
+.group{margin-bottom:52px}
+.group h3{font-family:var(--f-display);font-weight:700;font-size:clamp(22px,3.4vw,30px);color:var(--gold);margin:0 0 22px;display:flex;gap:12px;align-items:center;text-wrap:balance}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:18px}
+.card{background:linear-gradient(180deg,var(--panel-2),var(--panel));border:1px solid var(--line);border-radius:18px;padding:22px;display:flex;flex-direction:column;gap:10px;min-width:0;transition:border-color .2s}
+.card:hover{border-color:var(--gold-line)}
+.card .top{display:flex;gap:14px;align-items:flex-start}
+.ico{flex:none;width:44px;height:44px;border-radius:12px;background:var(--line);display:grid;place-items:center;font-size:22px}
+.card h4{margin:0;font-size:16px;font-weight:600;line-height:1.4}
+.card .where{font-family:var(--f-mono);font-size:12px;color:var(--gold);margin-top:2px}
+.card p{margin:0;color:#CBD5E1;font-size:14px}
+.card .tip{font-size:13px;color:var(--gold);background:var(--gold-soft);border-radius:10px;padding:7px 11px}
+.card .badge{align-self:flex-start;font-size:11px;font-weight:600;letter-spacing:.06em;color:#1a1300;background:var(--gold);border-radius:999px;padding:2px 9px}
+sup{line-height:0}
+sup a{font-family:var(--f-mono);font-size:10px;color:var(--faint);text-decoration:none;padding:0 1px}
+sup a:hover{color:var(--gold)}
+
+.xhs{display:flex;align-items:center;gap:8px;font-size:13px;text-decoration:none;color:var(--fg);background:rgba(255,36,66,.08);border:1px solid rgba(255,36,66,.28);border-radius:10px;padding:7px 10px;min-width:0}
+.xhs:hover{background:rgba(255,36,66,.16)}
+.card > a.xhs:first-of-type{margin-top:auto}
+.xhs .xb{flex:none;font-size:11px;font-weight:600;color:#fff;background:#FF2442;border-radius:5px;padding:1px 6px}
+.xhs .xt{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:#E2E8F0}
+.xrow{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px}
+.xhs.sm{display:inline-flex;padding:2px 8px 2px 3px;border-radius:7px;font-size:12px;color:#FDA4AF}
+
+.card .ph{margin:-22px -22px 4px;position:relative;aspect-ratio:4/3;overflow:hidden;border-radius:17px 17px 0 0;background:var(--line)}
+.card .ph img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .4s}
+.card:hover .ph img{transform:scale(1.03)}
+.card .ph figcaption{position:absolute;right:8px;bottom:8px;font-size:11px;background:rgba(2,6,23,.72);border-radius:6px;padding:2px 7px}
+.card .ph figcaption a{text-decoration:none;color:#E2E8F0}
+.hero .sky{background-size:cover;background-position:center}
+.hero .shade{background:linear-gradient(90deg,rgba(2,6,23,.92) 0%,rgba(2,6,23,.7) 45%,rgba(2,6,23,.25) 100%),linear-gradient(180deg,rgba(2,6,23,.2) 0%,rgba(2,6,23,.35) 60%,var(--bg) 100%)}
+.hcredit{position:absolute;right:max(16px,env(safe-area-inset-right,0px));bottom:16px;z-index:2;font-size:11px;color:#CBD5E1;text-decoration:none;background:rgba(2,6,23,.6);border-radius:6px;padding:2px 8px}
+@media (max-width:600px){.hcredit{bottom:56px}}
+@media (prefers-reduced-motion:reduce){.card .ph img{transition:none}}
+
+/* timeline */
+.tl{position:relative;display:flex;flex-direction:column;gap:36px}
+.tl::before{content:"";position:absolute;left:50%;top:0;bottom:0;width:1px;background:var(--line-2)}
+.day{position:relative;width:calc(50% - 40px);background:linear-gradient(180deg,var(--panel-2),var(--panel));border:1px solid var(--line);border-radius:20px;padding:26px;display:flex;flex-direction:column;gap:18px}
+.day:nth-child(odd){align-self:flex-start} .day:nth-child(even){align-self:flex-end}
+.day::after{content:"";position:absolute;top:34px;width:13px;height:13px;border-radius:50%;background:var(--dot);box-shadow:0 0 0 5px rgba(74,222,128,.15)}
+.day:nth-child(odd)::after{right:-47px} .day:nth-child(even)::after{left:-47px}
+.dtop{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.pill{font-size:12px;font-weight:600;color:var(--gold);background:var(--gold-soft);border:1px solid var(--gold-line);border-radius:999px;padding:3px 12px}
+.dtop .date{font-size:13px;color:var(--dim)}
+.day h3{font-family:var(--f-display);font-weight:700;font-size:26px;margin:0;line-height:1.3;text-wrap:balance}
+.day .sub{color:var(--dim);font-size:14px;margin:-12px 0 0}
+.items{display:flex;flex-direction:column;gap:18px}
+.it{display:flex;gap:14px}
+.it .ico{width:40px;height:40px;font-size:19px;border-radius:11px}
+.it .t{font-family:var(--f-mono);font-size:12px;color:var(--gold)}
+.it h5{margin:1px 0 3px;font-size:15px;font-weight:600;line-height:1.45}
+.it p{margin:0;color:var(--dim);font-size:13.5px}
+.it .cost{display:inline-block;margin-top:5px;font-family:var(--f-mono);font-size:12px;color:var(--fg);background:var(--line);border-radius:6px;padding:1px 8px}
+.it.alert p{color:var(--warn)}
+@media (max-width:860px){
+  .tl::before{left:7px}
+  .day{width:auto;margin-left:30px;align-self:stretch!important;padding:20px}
+  .day::after{left:-30px!important;right:auto!important}
+}
+
+/* budget */
+.budget{background:linear-gradient(180deg,var(--panel-2),var(--panel));border:1px solid var(--line);border-radius:20px;overflow:hidden}
+.btotal{display:flex;flex-wrap:wrap;gap:12px 40px;padding:24px 26px;border-bottom:1px solid var(--line)}
+.btotal .v{font-family:var(--f-display);font-weight:900;font-size:40px;color:var(--gold);line-height:1.1}
+.btotal .l{font-size:12px;color:var(--dim);letter-spacing:.06em}
+.tbl{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:14px}
+td,th{padding:12px 26px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:11px;letter-spacing:.14em;color:var(--faint);font-weight:500}
+td.r,th.r{text-align:right;white-space:nowrap;font-family:var(--f-mono);font-variant-numeric:tabular-nums}
+td.n{color:var(--dim);font-size:13px}
+tr:last-child td{border-bottom:0}
+tr.sum td{font-weight:600;color:var(--gold);border-top:1px solid var(--gold-line)}
+.est{font-size:11px;color:var(--warn);border:1px solid rgba(252,165,165,.35);border-radius:4px;padding:0 5px;margin-left:4px;white-space:nowrap}
+
+/* tips */
+.tips{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+@media (max-width:760px){.tips{grid-template-columns:1fr}}
+.tipc{background:linear-gradient(180deg,var(--panel-2),var(--panel));border:1px solid var(--line);border-radius:18px;padding:24px;display:flex;flex-direction:column;gap:14px;min-width:0}
+.tipc h4{margin:0;font-family:var(--f-display);font-size:21px;display:flex;gap:10px;align-items:center}
+.tipc ul{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:10px}
+.tipc li{display:flex;gap:10px;font-size:14px;color:#CBD5E1}
+.tipc li::before{content:"•";color:var(--gold);font-weight:700}
+.tipc.src li{font-size:13px}
+.tipc.src li::before{content:none}
+.tipc.src .id{font-family:var(--f-mono);color:var(--faint);flex:none;width:30px}
+.tipc.src a{overflow-wrap:anywhere;text-decoration-color:var(--line-2)}
+.tipc.wide{grid-column:1/-1}
+.tipc.src ul{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:8px 24px}
+li:target{background:var(--gold-soft);border-radius:6px}
+:target{scroll-margin-top:90px}
+
+footer{border-top:1px solid var(--line);margin-top:64px}
+footer .inner{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-block:28px;font-size:12px;color:var(--faint)}
+footer .logo{font-size:15px}
+.scrollcue{position:absolute;left:50%;bottom:18px;width:20px;height:32px;border:1.5px solid var(--faint);border-radius:12px;transform:translateX(-50%)}
+.scrollcue::after{content:"";position:absolute;left:50%;top:7px;width:3px;height:6px;border-radius:2px;background:var(--fg);transform:translateX(-50%);animation:cue 1.8s infinite}
+@keyframes cue{0%{opacity:1;top:7px}70%{opacity:0;top:16px}100%{opacity:0}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.scrollcue::after{animation:none}.card{transition:none}}
+</style>
+</head>
+<body>
+<nav class="gut" aria-label="页面导航">
+  <div class="inner">
+    <span class="logo" id="logo"><b>SH</b> 深秋</span>
+    <div class="links" style="margin-left:auto">
+      <a href="#highlights">亮点</a><a href="#itinerary">行程</a><a href="#budget">花费</a><a href="#tips">贴士</a>
+    </div>
+  </div>
+</nav>
+<main id="app"></main>
+<footer class="gut"><div class="inner">
+  <span><span class="logo" id="flogo"></span> · <span id="fnote"></span></span>
+  <span>开放时间和展期查询于 2026-10-30 · <span class="est">估算</span> 表示没有可靠来源 · 照片来自小红书，版权归原作者</span>
+</div></footer>
+<script>
+const XHS = {"xianbo": ["6abe883d000000001c02e8b1", "AB1_-VSbq89HXD3ATUR_oxO3k_9caGUPGJ-hzrO7QMUhE=", "上海西岸艺博会定档！看看有什么新玩法？"], "lego": ["6abe0b380000000015001f2a", "AB1_-VSbq89HXD3ATUR_oxO03_ll-H8_uINT3TkOzq2QQ=", "上海citywalk新地标‼️3000㎡乐高花浪超出片"], "youguan": ["6ae18b31000000002b03d582", "ABE7JiMClqDbia05HXHeEUNi5mCnDYsv5YJ3jInVFq3rg=", "本周Oui Art展讯：上海油罐艺术中心曹澍展"], "xian": ["6ac2508f000000001b01cd24", "ABv9duqYjdbDPMxjnqhxZ6eeA_OpOJybpYmocaYM9Ja-Q=", "上海最好玩的西岸滨江citywalk！保姆级攻略"], "shbd": ["69e989b40000000023005645", "ABmFOrPbTcnQH_jd-0fPkEXozC1PgAQpYVmD7CUfl949g=", "🏛️上海博物馆东馆｜保姆级攻略（附速通路线"], "xinluo": ["6ad1ef96000000001a023354", "ABlLp7sq1xRKhHYXqycVIAW0f5Hrs5jrs1k1Lju6TbvZ4=", "国内首展｜穿越千年，一睹新罗金冠的璀璨"], "liucixin": ["6ae463470000000006021cdb", "AByHkSKm5JaPtV72BaCCOevSisUnAX1nOvDC1EzjOp9R8=", "上海新展｜来自刘慈欣的极致浪漫《烧火工》 💫"], "century": ["6ae478b800000000070392e5", "AByHkSKm5JaPtV72BaCCOevSxLyeI1rpasV6HYWO0R-VQ=", "10.30实况🍁上海近期最美的秋日公园"], "wuyong": ["6ad37a98000000001b02d561", "ABhtAaXIM4pOys_j8RdnY8ApePirRwKoSB-uZ6cHRpdDY=", "比起安福路！上海本地人更爱逛的3条小路…！"], "sanlifang": ["6a81c41f0000000006007f8a", "AB7hwfHWOfIvJSN91dmLVzzZwWKPJy_MWnPnd8PZ9v174=", "上海永康路排队王，零下80°黄油Dirty咖啡"], "tieshou": ["6a0ed33d0000000038034c74", "ABuYvqTCq0VArWLghAadm6rQ_P-sfbb_QwQEM5bYxecrY=", "Metal hands 铁手咖啡4.0 新店！新品我来啦"], "fuxing": ["6aad52cf000000002b0032b5", "ABKptEkD5i9sHssP6zNDv4ugnMBG7wfF2rnHnZSv6WhBU=", "初秋的复兴公园｜市中心藏了整园百年绿意"], "juyuan": ["6917222e0000000007034f2b", "ABhinMvL1iL7_x3ZH8u0HKIgSEBAmVT8FuoPupdLUHQf4=", "上海\"巨富长安\"📍Citywalk吃逛拍攻略✅"], "bancui": ["6a992df20000000012037e52", "ABowtD4e326PTb_W5qY0kpmlGBkXqALZJKAj2Mn-1Tye0=", "上海的夜晚就该浪费在这种好地方🥂…"], "lanxin": ["692c3e00000000001f00aa0e", "ABnJr_reAPIwk1JhOlZMhEyFxTJx1pfH46nbEyh2zQLDE=", "上海必吃！兰心餐厅本帮菜攻略🍽️"], "maolong": ["68655245000000000d0271ce", "ABiR6diNaNYA2v0F9datr6AuqVFRKz6-4h-cqSDHjVP34=", "连续8年米其林推介茂隆餐厅究竟怎么样😋"], "haijinzi": ["64d9cd9f000000000c0361ce", "ABNkjh3FIS-cGnet-0ekfTre3iUNB7J0amMKi12b8elzE=", "参赛作品|【海金滋】葱烤大排"], "suhe": ["6abb8360000000000b005c99", "ABQtKbtMkpd9e_jBPymH--4jX3qBemwuoO9Dcl-zsrtpg=", "上海最被低估的苏河湾citywalk！一次说清楚"], "foto": ["68d9ba180000000007028bb7", "ABT-ocnruy2upFgd_otaXcNkEPQiJKXOa13KGdmffPCYA=", "上海还是太超前了！Fotografiska！"], "rockbund": ["6ad76b07000000000c0081d6", "ABXtK3fhiSPI7Q5zcHC2CivAFBzU3AASsVbrurzfLFCDg=", "为艺术家黄洁宜设计的个展海报"], "duolun": ["6916f11400000000040212bb", "ABCN5NqQpQRNUVAOXPlou8YHxYAlbxxK80Ca2de8tjZaQ=", "虹口区一日citywalk路线攻略😺🍃🌳"], "siwang": ["6adca5f200000000330215a9", "ABpbmjq14SQqgrAqbph5SllfA0DEdhtEmU_tJKaznLqHo=", "上海新展：将死亡带回生活 | 看得人落泪"], "fanyong": ["6adc9ab70000000025022f78", "ABpbmjq14SQqgrAqbph5Sllc94I7qBNpHI32XrWiZMD1g=", "0元杨浦书籍双展📚强推给魔都的书虫们"], "gongqing": ["6ab10c340000000035017e01", "ABjqhTdqiqg6NVMQQByxAs6oXpvOWzNWtkMj61IIhFC_c=", "上海秋日天花板｜共青森林公园绝美秋色攻略✨"], "qingxi": ["6ad48ae3000000002603ab68", "AB7YW7ChxawvoaZ44osrKR8l4B09tSJ_KeOXsbTObA3zc=", "🍂上海青西郊野水杉｜魔都水杉秘境，免费"], "psa": ["6ab6314900000000180184dc", "AB2RKezEG3dYCc4E3Bw7jqZCLOTQvf0BSb_syZuinR914=", "上海新展｜11月记得去PSA看刘家琨"], "zhangyuan": ["6ac875e7000000001402e2f5", "ABICJm0q5NDp66eAzT1GmNbiOZyEVZkubF-MMHFZyb1Aw=", "上海张园｜百年石库门旅游攻略✨"], "shengjian": ["6ae1a405000000003501afd3", "ABE7JiMClqDbia05HXHeEUNmt9fm7pDx37bzyFq0-RuR8=", "上海生煎大测评"], "congyou": ["6a0d5c48000000000702de09", "ABYb6LcleOAVcMu7k5ykVDpw2kA2S6HUsUE6XK8dFtjCw=", "上海生煎天花板+封神葱油拌面 520宵夜圣地"]};
+const PHOTO = {"xianbo": "Hi艺术", "lego": "王先生", "youguan": "OUI ART 吾乙艺术", "xian": "上海去哪儿", "shbd": "knock knock小鹿游记", "xinluo": "一峰灼玉", "liucixin": "陸陸陸娜", "century": "艾玛芸📸", "wuyong": "Huo奶茶吐珍珠的面面", "sanlifang": "檟檟的旅行记录", "tieshou": "呜啦啦", "fuxing": "畅游的鱼儿", "juyuan": "向日葵凡子", "bancui": "面包贝狗", "lanxin": "行走的倩", "maolong": "小树", "haijinzi": "小红薯674A1E4D", "suhe": "上海周末指南", "foto": "爱美丽在嘉兴", "rockbund": "憬", "duolun": "潘思思", "siwang": "鹅鹅逛GAI", "fanyong": "Jay.C爱看展", "gongqing": "海琳", "qingxi": "心旅漫游记", "psa": "言小姐的文艺复兴", "zhangyuan": "不想长大"};
+const CARDX = {"复兴公园 + 思南路": ["fuxing"], "共青森林公园": ["gongqing"], "青西郊野公园": ["qingxi"], "世纪公园": ["century"], "金冠之下：新罗文物精华展": ["xinluo"], "上海博物馆东馆": ["shbd"], "刘慈欣《烧火工》科幻展": ["liucixin"], "外滩美术馆 · BANK-A-OKE": ["rockbund"], "Fotografiska 影像艺术中心": ["foto"], "将死亡带回生活": ["siwang"], "刘家琨：明月构想": ["psa"], "油罐艺术中心": ["youguan"], "乐高花浪 LEGO Bloom": ["lego"], "西岸艺术与设计博览会": ["xianbo"], "范用的书房": ["fanyong"], "苏河湾 citywalk": ["suhe"], "永嘉路—永康路—襄阳南路": ["wuyong"], "巨富长（巨鹿路、富民路、长乐路）": ["juyuan"], "虹口：甜爱路 + 多伦路": ["duolun"], "张园": ["zhangyuan"], "徐汇西岸滨江": ["xian"], "兰心餐厅": ["lanxin"], "茂隆餐厅": ["maolong"], "海金滋": ["haijinzi"], "生煎和葱油拌面": ["congyou", "shengjian"], "三立方咖啡": ["sanlifang"], "铁手咖啡": ["tieshou"], "半醉山岚": ["bancui"]};
+const ITEMX = [[/艺博会|艺术与设计博览会/,"xianbo"],[/油罐/,"youguan"],[/乐高/,"lego"],[/西岸滨江/,"xian"],[/巨富长/,"juyuan"],[/上海博物馆东馆/,"shbd"],[/新罗/,"xinluo"],[/刘慈欣/,"liucixin"],[/世纪公园/,"century"],[/复兴公园/,"fuxing"],[/兰心/,"lanxin"],[/茂隆/,"maolong"],[/永嘉路/,"wuyong"],[/半醉山岚/,"bancui"],[/苏河湾|九子公园/,"suhe"],[/Fotografiska/,"foto"],[/外滩美术馆/,"rockbund"],[/甜爱路|多伦路/,"duolun"],[/将死亡/,"siwang"],[/共青/,"gongqing"],[/范用/,"fanyong"],[/青西/,"qingxi"],[/刘家琨/,"psa"],[/张园/,"zhangyuan"],[/生煎|葱油拌面/,"congyou"]];
+const xurl = k => `https://www.xiaohongshu.com/explore/${XHS[k][0]}?xsec_token=${encodeURIComponent(XHS[k][1])}&xsec_source=pc_search`;
+const esc = t => t.replace(/[&<>"]/g, m => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[m]));
+const xcard = keys => (keys||[]).filter(k=>XHS[k]).map(k=>`<a class="xhs" href="${xurl(k)}" target="_blank" rel="noopener"><span class="xb">小红书</span><span class="xt">${esc(XHS[k][2])}</span><span aria-hidden="true">↗</span></a>`).join("");
+const xitem = title => { const ks=[...new Set(ITEMX.filter(([r])=>r.test(title)).map(([,k])=>k))]; return ks.length?`<div class="xrow">${ks.map(k=>`<a class="xhs sm" href="${xurl(k)}" target="_blank" rel="noopener" title="${esc(XHS[k][2])}"><span class="xb">小红书</span><span aria-hidden="true">↗</span></a>`).join("")}</div>`:""; };
+
+const SRC = {
+  T1:["上海博物馆官网 · 开放时间和特别展览","https://www.shanghaimuseum.net/mu/frontend/pg/index"],
+  T2:["上海外滩美术馆官网 · 展览日历","https://www.rockbundartmuseum.org/"],
+  XA:["小红书 · 2026 上海赏秋时间表","https://www.xiaohongshu.com/explore/6ae2c5cc000000001f03667a?xsec_token=ABOuayCGfmAU-EFf-kQSf7Cc3xwMPYxEC9rowUomMkOzM=&xsec_source=pc_search"],
+  XZ:["小红书 · 26 年 11 月上海新展精选","https://www.xiaohongshu.com/explore/6ad61df80000000028009754?xsec_token=ABw2YM9ENOs0pNBYmqHWn6wD26hvmlYoQ4939wH5QBo7Q=&xsec_source=pc_search"],
+  XG:["小红书 · 上海 11 月看展指南","https://www.xiaohongshu.com/explore/6adf2f8a000000001601b41e?xsec_token=ABXFpjjY_jpA7R9nFYseTq9bnI_8MMzzZIa2vH5K2Qa9E=&xsec_source=pc_search"],
+  XB:["小红书 · 上海本地人私藏本帮菜清单","https://www.xiaohongshu.com/explore/6ad8825e000000002b00f91b?xsec_token=ABUUqz_d3fem2DrEaM-mk8z8uEFY23zIy4Om5aOs1PvH8=&xsec_source=pc_search"],
+  XJ:["小红书 · 2026 进贤路美食攻略","https://www.xiaohongshu.com/explore/6a69d747000000000100e51b?xsec_token=ABZIS3kLYHBvw5wlcZpLFnt8u1odwEnQ2X095XjCEP1ck=&xsec_source=pc_search"],
+  XL:["小红书 · 西岸乐高花海很出片，但体验一般","https://www.xiaohongshu.com/explore/6ace0d380000000015015538?xsec_token=AB1k7O109i0rlypJwKaIFb3RMirSO6MUTIg6bPsqQfFQA=&xsec_source=pc_search"],
+  XM:["小红书 · 上博东馆保姆级攻略","https://www.xiaohongshu.com/explore/69e989b40000000023005645?xsec_token=ABmFOrPbTcnQH_jd-0fPkEXozC1PgAQpYVmD7CUfl949g=&xsec_source=pc_search"],
+  XW:["小红书 · 西岸艺博会定档","https://www.xiaohongshu.com/explore/6abe883d000000001c02e8b1?xsec_token=AB1_-VSbq89HXD3ATUR_oxO3k_9caGUPGJ-hzrO7QMUhE=&xsec_source=pc_search"],
+  XQ:["小红书 · 青西郊野水杉攻略","https://www.xiaohongshu.com/explore/6ad48ae3000000002603ab68?xsec_token=AB7YW7ChxawvoaZ44osrKR8l4B09tSJ_KeOXsbTObA3zc=&xsec_source=pc_search"],
+  XC:["小红书 · 共青森林公园秋色攻略","https://www.xiaohongshu.com/explore/6ab10c340000000035017e01?xsec_token=ABjqhTdqiqg6NVMQQByxAs6oXpvOWzNWtkMj61IIhFC_c=&xsec_source=pc_search"],
+  XH:["小红书 · 虹口一日 citywalk 路线","https://www.xiaohongshu.com/explore/6916f11400000000040212bb?xsec_token=ABCN5NqQpQRNUVAOXPlou8YHxYAlbxxK80Ca2de8tjZaQ=&xsec_source=pc_search"],
+  XY:["小红书 · 永嘉路—永康路—襄阳南路","https://www.xiaohongshu.com/explore/6ad37a98000000001b02d561?xsec_token=ABhtAaXIM4pOys_j8RdnY8ApePirRwKoSB-uZ6cHRpdDY=&xsec_source=pc_search"],
+  XS:["小红书 · 苏河湾 citywalk 一次说清楚","https://www.xiaohongshu.com/explore/6abb8360000000000b005c99?xsec_token=ABQtKbtMkpd9e_jBPymH--4jX3qBemwuoO9Dcl-zsrtpg=&xsec_source=pc_search"],
+  XD:["小红书 · 将死亡带回生活","https://www.xiaohongshu.com/explore/6adca5f200000000330215a9?xsec_token=ABpbmjq14SQqgrAqbph5SllfA0DEdhtEmU_tJKaznLqHo=&xsec_source=pc_search"]
+};
+
+const s = (...ids) => `<sup>${ids.map(i=>`<a href="#src-${i}">${i}</a>`).join("")}</sup>`;
+const E = '<span class="est">估算</span>';
+const SKY = { tx:`<div class="sky" style="background-image:url(img/hero.jpg);background-position:center 60%"></div><a class="hcredit" href="${xurl('gongqing')}" target="_blank" rel="noopener">封面：共青森林公园 · 小红书 @${PHOTO.gongqing}</a>` };
+
+const TRIPS = {
+tx:{
+  logo:"<b>SH</b> 深秋", foot:"上海深秋新玩法 · 2026/11/15–30",
+  eyebrow:"11月15日 – 30日 · 住家里 · 不走老景点",
+  t1:"上海", t2:"深秋新玩法",
+  intro:"外滩、东方明珠都去过了，这次换个上海：赶上梧桐和银杏最好看的两周，逛刚开的展、沿苏州河和梧桐区小马路慢慢走，再把进贤路的本帮菜吃一遍。",
+  stats:[["8","个主题日"],["16","天可选"],["11/21–30","银杏黄金期"],["10+","个新展"]],
+  dayCount:"八个主题", range:"11月15日 – 30日（挑 8 天，其余自由）",
+  whyK:"SHANGHAI · LATE AUTUMN", why:"老景点之外的上海", whySub:"按小红书上本地人和展讯博主的推荐挑的：新展、梧桐区小路、苏州河、虹口老街，加上赏秋时间表，都排在合适的星期几。",
+  groups:[
+   {icon:"🍂",title:"赏秋：梧桐、银杏、水杉",cards:[
+     {e:"🌳",t:"复兴公园 + 思南路",w:"梧桐区 · 11/11–20 梧桐最好看",d:`市中心的百年法式公园，接着走思南路看梧桐。赏秋时间表把 11 月中旬的梧桐列为最佳。${s("XA")}`},
+     {e:"🍁",t:"共青森林公园",w:"杨浦 · 免费",d:`博主眼里的上海秋日天花板：华明桥水杉林、红房子、涛声桥银杏林。清晨或午后去光线最好。${s("XC")}`,tip:"11/21–30 是银杏黄金期，水杉开始转红"},
+     {e:"🌲",t:"青西郊野公园",w:"青浦 · 免费，需预约",d:`上海少有的“水上森林”，水杉长在水里。11 月中下旬到 12 月中旬转红，早上 8:00–9:30 有晨雾。${s("XQ")}`,tip:"市区开车约 1 小时，工作日人少"},
+     {e:"🌼",t:"世纪公园",w:"浦东 · 上博东馆旁边",d:`秋日花海和芦苇，看完上博东馆走过去。`}
+   ]},
+   {icon:"🖼️",title:"看展：11 月的新展",cards:[
+     {e:"👑",t:"金冠之下：新罗文物精华展",w:"上博东馆二楼 · 展到 2027-01-18",d:`国内首展，新罗金冠真品。${s("T1")}`},
+     {e:"🏛️",t:"上海博物馆东馆",w:"世纪大道 1952 号 · 10:00–18:00",d:`基本陈列免预约，17:00 停止入场，周二闭馆（国定节假日除外）。${s("T1")} 速通路线：1F 青铜馆 → 2F 玉器馆 → 3F 陶瓷馆 → 4F 考古馆，1F 可免费存包。${s("XM")}`,tip:"大都会珠宝展据小红书展讯 11 月下旬开，官网还没公布"},
+     {e:"🚀",t:"刘慈欣《烧火工》科幻展",w:"上海科技馆 · 42 元起",d:`大刘的科幻童话做成的沉浸展，和上博东馆是同一个地铁站。${s("XG")}`},
+     {e:"🎤",t:"外滩美术馆 · BANK-A-OKE",w:"黄洁宜个展 · 10/31–2027/2/21",d:`把美术馆变成“卡拉 OK 银行”的互动装置展，同期还有约塔·蒙巴萨个展。${s("T2")}`},
+     {e:"📷",t:"Fotografiska 影像艺术中心",w:"苏州河边 · 50–100 元",d:`一张票能从白天泡到晚上，现在是《再构香港》等双展。${s("XG")}`},
+     {e:"🪦",t:"将死亡带回生活",w:"多伦现代美术馆 · 免费",d:`关于死亡的展，却不沉重。最戳人的是可以亲手熨衣服的那件作品。${s("XD","XG")}`,tip:"最近经历离别的话，先看看展览介绍再决定"},
+     {e:"🏗️",t:"刘家琨：明月构想",w:"上海当代艺术博物馆 · 11/14 起",d:`建筑师刘家琨的个展，展到 2027-02-28。${s("XZ")}`},
+     {e:"🛢️",t:"油罐艺术中心",w:"西岸 · 曹澍《忘川上游的闪电》",d:`11/7 开幕的新展，同场还有群展《新生之地》。${s("XZ")}`},
+     {e:"🌸",t:"乐高花浪 LEGO Bloom",w:"西岸油罐艺术中心",d:`3000㎡、38 万朵乐高花，户外装置拍照很震撼。但有博主说室内展要预约、空间小，工作日人也不少。${s("XL")}`},
+     {e:"🎨",t:"西岸艺术与设计博览会",w:"11/10–15 · 150+ 家画廊",d:`第十三届，横跨西岸四个场馆。11/15 正好是最后一天。${s("XW")}`},
+     {e:"📚",t:"范用的书房",w:"杨浦 · 新闻出版博物馆 · 免费",d:`书籍装帧和爱书人的故事两个展，书虫友好。${s("XG")}`}
+   ]},
+   {icon:"🚶",title:"Citywalk：本地人更爱的小马路",cards:[
+     {e:"🌊",t:"苏河湾 citywalk",w:"新闸路站 → 外滩源 · 约 4 km",d:`沿苏州河看工业遗存和老建筑：九子公园、福新面粉厂、光二仓库、Fotografiska、四行仓库、慎余里、邮政博物馆、乍浦路桥、外滩源。${s("XS")}`},
+     {e:"☕",t:"永嘉路—永康路—襄阳南路",w:"比安福路更安静的梧桐小路",d:`梧桐、老洋房、咖啡店叠在一起。本地博主走了好几遍。${s("XY")}`},
+     {e:"🛍️",t:"巨富长（巨鹿路、富民路、长乐路）",w:"静安 · 小店和小酒馆",d:`小红书上 9000+ 收藏的经典吃逛线。`},
+     {e:"💌",t:"虹口：甜爱路 + 多伦路",w:"民国文人一条线",d:`鲁迅公园 → 甜爱路（爱心红绿灯）→ 鲁迅故居（8 元）→ 内山书店旧址 → 多伦路 → 1933 老场坊 → 北外滩。${s("XH")}`},
+     {e:"🏘️",t:"张园",w:"南京西路 · 百年石库门重生",d:`修复后的石库门建筑群，现在有快闪和品牌空间。`},
+     {e:"🗺️",t:"徐汇西岸滨江",w:"龙美术馆、油罐、西岸梦中心",d:`沿江的美术馆带，平路好走。`}
+   ]},
+   {icon:"🍜",title:"上海老味道：本帮菜、生煎、葱油拌面",cards:[
+     {e:"🥘",t:"兰心餐厅",w:"进贤路 · 人均约 85 元",d:`进贤路老牌天花板：红烧肉、酱爆猪肝、草头圈子。饭点必排队。${s("XB")}`,tip:"进贤路店面都很小，错峰去"},
+     {e:"🐍",t:"茂隆餐厅",w:"进贤路 · 人均约 90 元",d:`招牌响油鳝丝，上桌滋滋响。${s("XB")}`},
+     {e:"🍖",t:"海金滋",w:"进贤路 · 人均约 75 元",d:`本地人平价食堂：葱烤大排、蟹粉蛋、油爆虾。${s("XB")}`},
+     {e:"🥟",t:"生煎和葱油拌面",w:"大壶春 · 东泰祥",d:`本地吃货推荐的生煎天花板加葱油拌面，适合当夜宵。`}
+   ]},
+   {icon:"🍷",title:"咖啡和小酒馆",cards:[
+     {e:"🧊",t:"三立方咖啡",w:"永康路 · −80℃ 黄油 dirty",d:`曾经的排队王，现在基本不用排了。${s("XY")}`},
+     {e:"✋",t:"铁手咖啡",w:"襄阳南路",d:`本地人回购的咖啡店，推荐黑芝麻和开心果 dirty。${s("XY")}`},
+     {e:"🦀",t:"半醉山岚",w:"巨鹿花园 · 宁波小酒馆，开到凌晨 1 点",d:`独栋洋房，晚上有乐队驻唱，户外吹风小酌。必点油淋呛河虾，11 月梭子蟹正肥。`}
+   ]}
+  ],
+  days:[
+   {n:1,date:"11月15日 · 周日",t:"西岸艺术日",sub:"艺博会最后一天 + 滨江",items:[
+     ["🎨","10:30–13:00","西岸艺术与设计博览会",`最后一天。${s("XW")}`],
+     ["🛢️","13:30–15:30","油罐艺术中心：曹澍新展 + 乐高花浪",`${s("XZ","XL")}`],
+     ["🗺️","15:30–17:30","徐汇西岸滨江散步看日落",""],
+     ["🛍️","19:00","晚上去巨富长吃饭、逛小店",""]
+   ]},
+   {n:2,date:"11月18日 · 周三",t:"浦东博物馆日",sub:"同一个地铁站：上海科技馆",items:[
+     ["🏛️","10:00–14:00","上海博物馆东馆 + 新罗金冠展",`周二闭馆，所以排周三。${s("T1","XM")}`],
+     ["🚀","14:30–16:30","刘慈欣《烧火工》科幻展",`上海科技馆，42 元起。${s("XG")}`],
+     ["🌼","16:30–17:30","世纪公园看秋色和日落",""]
+   ]},
+   {n:3,date:"11月19日 · 周四",t:"梧桐区慢走 + 进贤路",sub:"梧桐最佳观赏期",items:[
+     ["🌳","10:00–11:30","复兴公园 → 思南路",`${s("XA")}`],
+     ["🥘","11:30","午饭：进贤路兰心或茂隆",`错峰到，避开饭点排队。${s("XB","XJ")}`],
+     ["☕","13:30–17:00","永嘉路 → 永康路 → 襄阳南路",`三立方 −80℃ dirty、铁手咖啡。${s("XY")}`],
+     ["🦀","19:30","半醉山岚：宁波小酒馆听驻唱",""]
+   ]},
+   {n:4,date:"11月21日 · 周六",t:"苏河湾 citywalk",sub:"从新闸路走到外滩源",items:[
+     ["🌊","10:00–13:00","苏河湾：九子公园 → 福新面粉厂 → 光二仓库",`${s("XS")}`],
+     ["📷","13:30–16:00","Fotografiska 影像艺术中心",`${s("XG")}`],
+     ["🌉","16:00–17:30","四行仓库 → 慎余里 → 乍浦路桥 → 外滩源",`${s("XS")}`],
+     ["🎤","17:30","外滩美术馆 BANK-A-OKE",`开放时间没在官网查到，去之前看一下。${s("T2")}`]
+   ]},
+   {n:5,date:"11月22日 · 周日",t:"虹口民国文人线",sub:"人少、有生活气",items:[
+     ["💌","10:00–12:00","鲁迅公园 → 甜爱路 → 鲁迅故居",`故居 8 元，对面光头生煎。${s("XH")}`],
+     ["🪦","13:00–14:30","多伦现代美术馆：将死亡带回生活",`${s("XD")}`],
+     ["🏚️","15:00–17:00","多伦路 → 1933 老场坊 → 北外滩滨江",`${s("XH")}`]
+   ]},
+   {n:6,date:"11月25日 · 周三",t:"杨浦：银杏 + 书",sub:"银杏进入黄金期",items:[
+     ["🍁","9:30–12:30","共青森林公园：华明桥水杉、红房子、涛声桥银杏",`${s("XC")}`],
+     ["📚","14:00–15:30","新闻出版博物馆：范用的书房",`免费。${s("XG")}`],
+     ["🌇","16:00","杨浦滨江散步",""]
+   ]},
+   {n:7,date:"11月28日 · 周六",t:"青西郊野公园看水杉",sub:"早起去，赶晨雾",items:[
+     ["🌲","8:00–11:00","青西郊野公园水上森林",`免费但要预约，市区开车约 1 小时。${s("XQ")}`],
+     ["🍜","12:30","回市区吃一碗葱油拌面",""]
+   ]},
+   {n:8,date:"11月29日 · 周日",t:"建筑展 + 石库门 + 生煎",sub:"收尾的一天",items:[
+     ["🏗️","10:30–13:00","上海当代艺术博物馆：刘家琨展",`${s("XZ")}`],
+     ["🏘️","14:30–16:30","张园石库门",""],
+     ["🥟","18:00","生煎 + 葱油拌面：大壶春 / 东泰祥",""]
+   ]}
+  ],
+  budget:{total:"约 ¥1,000/人",alt:[["¥0","上博东馆基本陈列、共青、青西、多伦现代美术馆"],["住家里","没有住宿和机票"]],rows:[
+    ["门票",`刘慈欣展 42 元起${s("XG")}、Fotografiska 50–100 元${s("XG")}、鲁迅故居 8 元${s("XH")}，其他多数免费`,"约 ¥160"],
+    ["本帮菜三顿",`兰心约 85、茂隆约 90、海金滋约 75 元/人${s("XB")}`,"约 ¥250"],
+    ["咖啡和小酒馆",`${E}`,"约 ¥400"],
+    ["交通",`地铁打车，青西开车往返 ${E}`,"约 ¥200"]
+  ]},
+  tips:[
+   {icon:"🗓️",title:"按星期几排过的",items:[`上博东馆周二闭馆，人民广场馆周一闭馆。${s("T1")}`,`小红书展讯提醒：多数场馆周一闭馆，免费展多半要提前预约。${s("XG")}`,`西岸艺博会 11/15 是最后一天。${s("XW")}`]},
+   {icon:"🍂",title:"赏秋时间表",items:[`11/11–20：梧桐最佳，银杏渐黄（武康路、思南路、世纪公园、共青）。${s("XA")}`,`11/21–30：银杏黄金期，水杉转橙红（共青、青西、古猗园）。${s("XA")}`,`青西水杉 12 月初颜色最饱和，想等最红可以留到 12 月。${s("XQ")}`]},
+   {icon:"📌",title:"要提前约的",items:[`青西郊野公园：免费但要预约。${s("XQ")}`,`乐高花浪的室内展：要预约。${s("XL")}`,`免费展大多要预约。${s("XG")}`]},
+   {icon:"🍽️",title:"吃饭小贴士",items:[`本帮菜偏甜，怕甜就跟老板说少糖。${s("XB")}`,`腌笃鲜、草头是时令菜，不是全年都有。${s("XB")}`,`进贤路几家都很小，错峰去。${s("XB")}`]}
+  ]
+}
+};
+
+function renderTrip(key){
+  const T = TRIPS[key];
+  const used = new Set();
+  const collect = h => { (h.match(/#src-([A-Z]+\d*)/g)||[]).forEach(m=>used.add(m.slice(5))); return h; };
+  const groups = T.groups.map(g=>`
+    <div class="group"><h3><span aria-hidden="true">${g.icon}</span>${g.title}</h3><div class="grid">
+      ${g.cards.map(c=>collect(`<div class="card">
+        ${(()=>{const k=(CARDX[c.t]||[])[0]; return k&&PHOTO[k]?`<figure class="ph"><img src="img/${k}.jpg" alt="${esc(c.t)}" loading="lazy" decoding="async"><figcaption><a href="${xurl(k)}" target="_blank" rel="noopener">📷 小红书 @${esc(PHOTO[k])}</a></figcaption></figure>`:"";})()}
+        ${c.badge?`<span class="badge">${c.badge}</span>`:""}
+        <div class="top"><span class="ico" aria-hidden="true">${c.e}</span><div><h4>${c.t}</h4><div class="where">📍 ${c.w}</div></div></div>
+        ${c.d?`<p>${c.d}</p>`:""}${c.tip?`<div class="tip">💡 ${c.tip}</div>`:""}
+        ${xcard(CARDX[c.t])}
+      </div>`)).join("")}
+    </div></div>`).join("");
+  const days = T.days.map(d=>`
+    <article class="day"><div class="dtop"><span class="pill">Day ${d.n}</span><span class="date">${d.date}</span></div>
+      <h3>${d.t}</h3><p class="sub">${d.sub}</p>
+      <div class="items">${d.items.map(([e,t,h,p,c])=>collect(`<div class="it${e==="⚠️"?" alert":""}"><span class="ico" aria-hidden="true">${e}</span><div>
+        <div class="t">${t}</div><h5>${h}</h5>${p?`<p>${p}</p>`:""}${c?`<span class="cost">${c}</span>`:""}${xitem(h)}</div></div>`)).join("")}</div>
+    </article>`).join("");
+  const B = T.budget;
+  const budget = collect(`<div class="budget">
+    <div class="btotal"><div><div class="v">${B.total}</div><div class="l">两人全付现金</div></div>
+      ${B.alt.map(([v,l])=>`<div><div class="v" style="font-size:24px;padding-top:12px">${v}</div><div class="l">${l}</div></div>`).join("")}</div>
+    <div class="tbl"><table><thead><tr><th>项目</th><th>依据</th><th class="r">两人合计</th></tr></thead><tbody>
+      ${B.rows.map(([a,b,c])=>`<tr><td>${a}</td><td class="n">${b}</td><td class="r">${c}</td></tr>`).join("")}
+      <tr class="sum"><td>合计</td><td></td><td class="r">${B.total}</td></tr>
+    </tbody></table></div></div>`);
+  const tips = T.tips.map(t=>collect(`<div class="tipc"><h4><span aria-hidden="true">${t.icon}</span>${t.title}</h4><ul>${t.items.map(i=>`<li><span>${i}</span></li>`).join("")}</ul></div>`)).join("");
+  const order = Object.keys(SRC).filter(k=>used.has(k));
+  const srcCard = `<div class="tipc src wide"><h4><span aria-hidden="true">🔗</span>来源</h4><ul>${order.map(k=>`<li id="src-${k}"><span class="id">${k}</span><a href="${SRC[k][1]}" target="_blank" rel="noopener">${SRC[k][0]}</a></li>`).join("")}</ul></div>`;
+
+  document.getElementById("app").innerHTML = `
+  <section class="hero">${SKY[key]}<div class="shade"></div>
+    <div class="inner gut">
+      <div class="eyebrow">${T.eyebrow}</div>
+      <h1><span class="w">${T.t1}</span><span class="g">${T.t2}</span></h1>
+      <p class="intro">${T.intro}</p>
+      <div class="cta"><a class="btn primary" href="#highlights">有什么好玩的？ ↓</a><a class="btn" href="#itinerary">📋 ${T.dayCount}行程</a></div>
+      <div class="stats">${T.stats.map(([v,l])=>`<div class="stat"><span class="v">${v}</span><span class="l">${l}</span></div>`).join("")}</div>
+    </div><span class="scrollcue" aria-hidden="true"></span>
+  </section>
+  <section class="block gut" id="highlights"><div class="inner">
+    <div class="shead"><span class="k">${T.whyK}</span><h2>${T.why}</h2><p>${T.whySub}</p></div>${groups}
+  </div></section>
+  <section class="block gut" id="itinerary"><div class="inner">
+    <div class="shead"><span class="k">${T.range}</span><h2>${T.dayCount}行程安排</h2><p>按真实日期排好了：周几开门、周几闭馆、哪天有免费活动。</p></div>
+    <div class="tl">${days}</div>
+  </div></section>
+  <section class="block gut" id="budget"><div class="inner">
+    <div class="shead"><span class="k">BUDGET · 2 人</span><h2>一共要花多少</h2></div>${budget}
+  </div></section>
+  <section class="block gut" id="tips"><div class="inner">
+    <div class="shead"><span class="k">实用信息</span><h2>旅行贴士</h2></div>
+    <div class="tips">${tips}${srcCard}</div>
+  </div></section>`;
+
+  document.getElementById("logo").innerHTML = T.logo;
+  document.getElementById("flogo").innerHTML = T.logo;
+  document.getElementById("fnote").textContent = T.foot;
+  document.title = "上海深秋新玩法 · 11/15–30";
+  document.querySelectorAll(".switch button").forEach(b=>b.setAttribute("aria-pressed", String(b.dataset.route===key)));
+}
+
+renderTrip("tx");
+</script>
+</body>
+</html>
